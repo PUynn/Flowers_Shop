@@ -1,0 +1,136 @@
+.cart-container {
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 0;
+  min-height: auto;
+  box-shadow: none;
+  max-height: calc(80vh - 60px);
+  overflow-y: auto;
+}
+
+.cart-container h2 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+.empty-cart {
+  text-align: center;
+  color: #999;
+  padding: 60px 20px;
+  font-size: 16px;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cart-item {
+  background-color: #f5f5f5;
+  border: 1px solid #efefef;
+  border-radius: 6px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: auto 1fr auto auto auto;
+  gap: 10px;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.cart-item:hover {
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.item-details h3 {
+  margin: 0 0 3px 0;
+  font-size: 13px;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.item-details .item-price {
+  margin: 0;
+  font-size: 12px;
+  color: #4CAF50;
+  font-weight: 600;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 4px;
+  background-color: #ffffff;
+}
+
+.qty-btn {
+  background-color: white;
+  border: none;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 3px;
+  transition: all 0.2s;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.qty-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.quantity {
+  min-width: 30px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  color: #1a1a1a;
+}
+
+.item-total {
+  text-align: right;
+  min-width: 80px;
+}
+
+.item-total p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #4CAF50;
+}
+
+.remove-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 11px;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+.remove-btn:hover {
+  background-color: #d32f2f;
+}
+
+@media (max-width: 768px) {
+  .cart-item {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .item-total,
+  .quantity-controls,
+  .remove-btn {
+    grid-column: auto;
+  }
+}
