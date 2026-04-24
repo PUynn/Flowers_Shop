@@ -1,4 +1,4 @@
-# 🌸 Pu's Flowers - Shopping Cart Application
+# 🌸 Pu's Flowers
 Built with **React + Vite**.
 This is an assignment project to build a simple Shopping Cart application. 
 
